@@ -23,7 +23,7 @@ def run_company_type ():
     ownership = ownership.to_frame()
     ownership.columns = ['counts']
 
-
+    st.markdown("****")
     with st.expander('회사 유형 총 정리 테이블'):
         st.dataframe(ownership)
 
