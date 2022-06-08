@@ -10,14 +10,14 @@ import joblib
 import numpy as np
 
 def run_ml():
-    st.write('Job Description을 입력 및 버튼 클릭, 긍정 부정 예측.')
-    st.write('머신러닝 데이터 113개')
-    st.write('정확도: 78.26%')
+    st.write('- Job Description을 입력 및 버튼 클릭, 긍정 부정 예측.')
+    st.write('- 머신러닝 데이터 113개')
+    st.write('- 정확도: 78.26%')
     st.markdown("****")
   
 
     
-    sentence = st.text_input('문장 입력')
+    sentence = st.text_input('Job Description안의 영문 키워드 입력후 버튼클릭')
 
     # 유저가 버튼을 누르면, 예측하도록 만든다.
     if st.button('예측 실행') :

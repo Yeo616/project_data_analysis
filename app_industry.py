@@ -6,7 +6,9 @@ import altair as alt
 
 def run_industry():
     st.subheader("데이터 애널리스트 모집 산업/섹터 Top")
-    st.text('')
+    st.write('- 데이터 애널리스트를 가장 많이 모집하는 산업/섹터 Top 순위로 정리')
+
+    st.markdown('****')
 
     df = pd.read_csv('data/df_data_anaylist2.csv', index_col=0)
     df = df.astype({'Founded':'int'})

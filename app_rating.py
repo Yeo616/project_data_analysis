@@ -19,7 +19,7 @@ def run_rating():
     
     col1,col2 = st.columns([1,3])
 
-    rating = st.slider('별점 선택', 1.0,5.0,1.0,0.1 )
+    rating = st.slider('슬라이드를 이동하여 별점 선택', 1.0,5.0,1.0,0.1 )
 
     df_rating = df.loc[df['Rating'] == rating, 
         ['Rating','Job Title','Company Name','Industry',
@@ -43,7 +43,7 @@ def run_rating():
     st.markdown("****")
     # 급여 분포도그래프
     st.write(' ')
-    st.write('해당 별점 범위에 해당하는 급여 범위 산점그래프')
+    st.write('###### -  해당 별점 범위에 해당하는 급여 범위 산점그래프')
     
     fig = px.scatter(df_rating, 'Salary_Estimate_From_(K)', 
         'Salary_Estimate_To_(K)', )
@@ -52,7 +52,7 @@ def run_rating():
     
     st.markdown("****")
     # 회사 규모
-    st.text('해당 별점 범위에 해당하는 회사규모 산점 그래프')
+    st.write('###### -  해당 별점 범위에 해당하는 회사규모 산점 그래프')
     fig1 = px.scatter(df_rating, 'Size_From(employees)', 'Size_To(employees)')
     st.plotly_chart(fig1)
     # 버블로 만들고 싶드아아아아아아아ㅏ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
