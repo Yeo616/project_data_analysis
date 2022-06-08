@@ -54,6 +54,25 @@ def main():
         st.write('Python으로 데이터 가공/분석을 하여, 해당 지식과 기술을 이용한 현업에서는 구체적으로 어떤 역할을 수행하고, 어떠한 업계에서 일을 하는지 이해 및 동기부여를 주고자 작업하였다.')
         st.write('자료 출처는 미국의 익명 직장 및 상사 평가 사이트인 글래스도어이며, Data Analyst에 관련한 모집공고의 데이터이다.')
         st.write('참고사항: 영어로 된 데이터셋의 가공이므로, 데이터는 모두 영문')
+        
+        with st.expander('데이터 컬럼 설명'):
+            st.write('- Job Title: 직무')
+            st.write('- Job Description: 역할')
+            st.write('- Rating: 회사 평점')
+            st.write('- Location: 위치')
+            st.write('- Founded: 설립일')
+            st.write('- Type of Ownership: 회사 유형')
+            st.write('- Industry: 업계')
+            st.write('- Sector: 섹터')
+            st.write('- Revenue: 회사 이익')
+            st.write('- Job Title: 직무')
+            st.write('- Competitors: 경쟁사')
+            st.write('- Salary_Estimate_To_(K): 최저 급여')
+            st.write('- Salary_Estimate_To_(K): 최고 급여')
+            st.write('- Size_From(employees): 회사 최소 규모')
+            st.write('- Size_To(employees): 회사 최대 규모')
+  
+
         st.markdown("****")
 
         st.write('##### 📋 사이드바 각 항목 개요')
@@ -65,7 +84,9 @@ def main():
         st.write('- 설립연도별: 회사가 오래되었을 수록, 회사 규모 체크, 직무 내용이 더 상세하게 되는지, 역할은 더 구체적인지 확인')
         st.write('- 긍정/부정 예측: 평점 1점과 5점의 데이터를 가지고, Job Description으로 어떤 역할이 직무/회사에 대해 안좋은 영향을 끼쳤는지 판단하는 기능.')
         st.write('- 검색: 상세한 데이터를 알고 싶으면, Job Title, Job Description,회사명으로 직접 영문으로 검색')
-   
+        st.markdown("****") 
+
+        st.write('##### 컬럼 설명')
         
 
     elif choice == column_list[1]:
