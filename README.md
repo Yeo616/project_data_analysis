@@ -8,7 +8,7 @@
 - 참고사항: 영문로 된 데이터셋의 가공이므로, 데이터는 모두 영문
 
 - Datatset: https://www.kaggle.com/datasets/ashishjangra27/ted-talks?select=data.csv
-- Deployment: http://3.34.129.145:8502/
+- Deployment: ec2-3-34-129-145.ap-northeast-2.compute.amazonaws.com:8503/
 
 ---
 ## 🚀 테이블 컬럼
