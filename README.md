@@ -7,12 +7,28 @@
 - 자료 출처는 미국의 익명 직장 및 상사 평가 사이트인 글래스도어이며, Data Analyst에 관련한 모집공고의 데이터이다. 
 - 참고사항: 영문로 된 데이터셋의 가공이므로, 데이터는 모두 영문
 
-- Datatset: https://www.kaggle.com/datasets/andrewmvd/data-analyst-jobs
-- Deployment: http://3.34.129.145:8503/
+- Datatset: https://www.kaggle.com/datasets/ashishjangra27/ted-talks?select=data.csv
+- Deployment: http://3.34.129.145:8502/
 
 ---
 ## 🚀 테이블 컬럼
-직무, 수행역할, 회사이름, 회사 평점, 위치, 해드쿼터, 설립일, 회사유형, 업계, 섹터, 회사 이익, 경쟁사, 최저/최고 연봉 정보
+Job Title: 직무
+Job Description: 역할 
+Rating: 회사 평점
+Location: 위치
+Founded: 설립일
+Type of Ownership: 회사 유형
+Industry: 업계
+Sector: 섹터
+Revenue: 회사 이익
+Competitors: 경쟁사
+Salary_Estimate_To_(K): 최저 급여
+Salary_Estimate_To_(K): 최고 급여
+Size_From(employees): 회사 최소 규모
+Size_To(employees): 회사 최대 규모
+
+- 기본적으로 직무/역할/회사 평점/ 설립일/ 최저급여/ 최고급여/ 회사 최소규모의 Nan 값은 제거하였음.
+- 급여/회사규모는 한 컬럼으로 묶여있어, 분리하여 가공하였음
 
 ---
 ## 📝 실행 설명
