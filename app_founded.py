@@ -4,7 +4,9 @@ import pandas as pd
 df = pd.read_csv('data/df_data_anaylist2.csv', index_col=0)
 df = df.astype({'Founded':'int'})
 df = df.astype({'Rating':'int'})
-df = df[['Founded', 'Job Title', 'Job Description','Sector','Company Name','Headquarters','Industry','Rating','Type of ownership']
+# df = df.astype({'Size_To(employees)':'int'})
+df = df.astype({'Size_From(employees)':'int'})
+df = df[['Founded', 'Size_From(employees)','Size_To(employees)','Job Title', 'Job Description','Sector','Company Name','Headquarters','Industry','Rating','Type of ownership']
 ]
 
 def run_founded():

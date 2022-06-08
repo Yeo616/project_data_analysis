@@ -44,6 +44,7 @@ def run_rating():
     # 급여 분포도그래프
     st.write(' ')
     st.write('해당 별점 범위에 해당하는 급여 범위 산점그래프')
+    
     fig = px.scatter(df_rating, 'Salary_Estimate_From_(K)', 
         'Salary_Estimate_To_(K)', )
     

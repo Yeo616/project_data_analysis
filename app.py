@@ -8,7 +8,7 @@ from app_industry import run_industry
 from app_ml import run_ml
 from app_rating import run_rating
 from app_salary import run_salary
-from app_search import search_sector
+from app_search_description import run_search_description
 from app_company_name import run_company_type, search_company
 from app_serach_job import search_jobtitle
 from app_search_industry import search_industry
@@ -36,16 +36,20 @@ def main():
 
     # st.set_page_config(layout="wide")
     st.sidebar.header('데이터 애널리스트 모집공고 분석')
-    column_list = ['Home','회사/회사유형별','급여별','산업/섹터별','평가별','설립연도별','긍정/부정 예측','검색']
+    column_list = ['Home','회사/회사유형별','급여별','산업/섹터별','평점별','설립연도별','긍정/부정 예측','검색']
     
+    with st.sidebar:
+        st.image('https://i.pinimg.com/originals/ba/6f/f5/ba6ff54c340c26e97bba8b9144aef579.jpg')
+
     choice = st.sidebar.radio(label= '분석 내용 선택',options = column_list)
     
 
            
     if choice == column_list[0]:
-        st.header('데이터 애널리스트 모집 공고 분석')
-        st.write('데이터 출처: Glassdoor')
-        st.write('(글래스도어는 미국의 해당 회사 직원의 익명 리뷰에 기반한 직장 및 상사 평가 사이트이다.)')
+        st.subheader('데이터 애널리스트 모집 공고 분석')
+        st.write('Python으로 데이터 가공/분석을 하여, 해당 지식과 기술을 이용한 현업에서는 구체적으로 어떤 역할을 수행하고, 어떠한 업계에서 일을 하는지 이해 및 동기부여를 주고자 작업하였다.')
+        st.write('자료 출처는 미국의 익명 직장 및 상사 평가 사이트인 글래스도어이며, Data Analyst에 관련한 모집공고의 데이터이다.')
+        st.write('참고사항: 영어로 된 데이터셋의 가공이므로, 데이터는 모두 영문')
         st.markdown("****")
 
         url = 'https://cdn-images-1.medium.com/max/1600/1*Hu4TWEt6o3iAWeqxqklbZg.jpeg'
@@ -102,9 +106,15 @@ def main():
         if len(name)>0:
             search_jobtitle(name)
 
+        name3 = st.text_input('Job Description',max_chars = 35)
+        if len(name3)>0:
+            run_search_description(name3)   
+
         name2 = st.text_input('회사명',max_chars = 35)
         if len(name2)>0:
             search_company(name2)
+
+  
 
     # st.sidebar.snow()
 
