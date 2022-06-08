@@ -78,14 +78,23 @@ def run_ml():
         # wordCloud = WordCloud(width=450,height= 300,background_color= 'white',stopwords=my_stopwords).generate(' '.join(job_title))
         # plt.figure(figsize=(19,9))
         # plt.axis('off')
-        # plt.title(df_1_5 ['Job Description'].name,fontsize=20)
+        # plt.title(df_1_5 ['Job Description'].name,"""  """fontsize=20)
         # plt.imshow(wordCloud)
         # plt.show()
         st.markdown('****')
 
         st.write('##### * 전체 Job Description 키워드')
         img = Image.open('data/df_description.png')
-        st.image(img, use_column_width= True)
+        # st.image(img, use_column_width= True)
+        # from wordcloud import WordCloud,STOPWORDS
+        # job_title=df ['Job Description'][~pd.isnull(df ['Job Description'])]
+        # my_stopwords = STOPWORDS
+        # my_stopwords.add('Job Description')
+        # wordCloud = WordCloud(width=450,height= 300,background_color= 'white',stopwords=my_stopwords).generate(' '.join(job_title))
+        # plt.figure(figsize=(19,9))
+        # plt.axis('off')
+        # plt.imshow(wordCloud)
+        # plt.show()
 
 
        
