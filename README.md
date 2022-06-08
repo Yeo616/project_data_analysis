@@ -12,20 +12,20 @@
 
 ---
 ## 🚀 테이블 컬럼
-Job Title: 직무
-Job Description: 역할 
-Rating: 회사 평점
-Location: 위치
-Founded: 설립일
-Type of Ownership: 회사 유형
-Industry: 업계
-Sector: 섹터
-Revenue: 회사 이익
-Competitors: 경쟁사
-Salary_Estimate_To_(K): 최저 급여
-Salary_Estimate_To_(K): 최고 급여
-Size_From(employees): 회사 최소 규모
-Size_To(employees): 회사 최대 규모
+- Job Title: 직무
+- Job Description: 역할 
+- Rating: 회사 평점
+- Location: 위치
+- Founded: 설립일
+- Type of Ownership: 회사 유형
+- Industry: 업계
+- Sector: 섹터
+- Revenue: 회사 이익
+- Competitors: 경쟁사
+- Salary_Estimate_To_(K): 최저 급여
+- Salary_Estimate_To_(K): 최고 급여
+- Size_From(employees): 회사 최소 규모
+- Size_To(employees): 회사 최대 규모
 
 - 기본적으로 직무/역할/회사 평점/ 설립일/ 최저급여/ 최고급여/ 회사 최소규모의 Nan 값은 제거하였음.
 - 급여/회사규모는 한 컬럼으로 묶여있어, 분리하여 가공하였음
