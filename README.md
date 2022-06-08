@@ -9,7 +9,7 @@
 
 - Datatset: https://www.kaggle.com/datasets/ashishjangra27/ted-talks?select=data.csv
 - Deployment: ec2-3-34-129-145.ap-northeast-2.compute.amazonaws.com:8503/
-
+[title](ec2-3-34-129-145.ap-northeast-2.compute.amazonaws.com:8503/)   
 ---
 ## 🚀 테이블 컬럼
 - Job Title: 직무
