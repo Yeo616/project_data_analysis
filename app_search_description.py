@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+from PIL import Image
 
 df = pd.read_csv('data/df_data_anaylist2.csv', index_col=0)
 df = df.astype({'Founded':'int'})
@@ -11,3 +12,7 @@ def run_search_description(name):
     result = df.loc[df['Job Description'].str.lower().str.contains(name.lower()), ]
     st.dataframe(result)
     st.text('검색된 데이터는 {}개입니다.'.format(result.shape[0]))
+
+    with st.expander('Job Description 키워드 참고'):
+        img = Image.open('data/df_description.png')
+        st.image(img, use_column_width= True)

@@ -86,7 +86,7 @@ def main():
         st.write('- 검색: 상세한 데이터를 알고 싶으면, Job Title, Job Description,회사명으로 직접 영문으로 검색')
         st.markdown("****") 
 
-        st.write('##### 컬럼 설명')
+        
         
 
     elif choice == column_list[1]:
@@ -147,10 +147,17 @@ def main():
         name = st.text_input('Job Title',max_chars = 35)
         if len(name)>0:
             search_jobtitle(name)
+        with st.expander('Job Title 키워드 참고'):
+            img = Image.open('data/job_title.png')
+            st.image(img, use_column_width= True)
 
         name3 = st.text_input('Job Description',max_chars = 35)
         if len(name3)>0:
             run_search_description(name3)   
+        
+        with st.expander('Job Description 키워드 참고'):
+            img = Image.open('data/df_description.png')
+            st.image(img, use_column_width= True)
 
         name2 = st.text_input('회사명',max_chars = 35)
         if len(name2)>0:
