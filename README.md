@@ -13,7 +13,7 @@
 > 참고사항: 영문로 된 데이터셋의 가공이므로, 도출 자료는 모두 영문입니다.
 
 - 데이터셋: 
->https://www.kaggle.com/datasets/ashishjangra27/ted-talks?select=data.csv
+>[https://www.kaggle.com/datasets/ashishjangra27/ted-talks?select=data.csv](https://www.kaggle.com/datasets/andrewmvd/data-analyst-jobs)
 - 결과물: 
 > www.ec2-3-34-129-145.ap-northeast-2.compute.amazonaws.com:8503/
 
