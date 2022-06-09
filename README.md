@@ -166,10 +166,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 ----
 ### 대시보드
 
----
-### 작업기간
 
-2022.06.01 - 2022.06.08
 
 ----
 >### 보충사항
