@@ -14,19 +14,19 @@ df = df.astype({'Salary_Estimate_To_(K)':'int'})
 
 def run_salary():
     
-    with st.expander('최저/최고 급여 분포 비교'):
-        data_analyst = df[df['Job Title']=='Data Analyst']
+    # with st.expander('최저/최고 급여 분포 비교'):
+    #     data_analyst = df[df['Job Title']=='Data Analyst']
         
-        fig1 = sns.set(style="white", palette="muted", color_codes=True)
-        f, axes = plt.subplots(1, 2, figsize=(15, 8), sharex=True)
-        sns.despine(left=True)
-        #Plot a histogram and kernel density estimate
-        sns.distplot(data_analyst['Salary_Estimate_From_(K)'], color="b", ax=axes[0])
-        sns.distplot(data_analyst['Salary_Estimate_To_(K)'], color="r",ax=axes[1])
-        plt.setp(axes, yticks=[])
-        plt.tight_layout()
-        st.set_option('deprecation.showPyplotGlobalUse', False)
-        st.pyplot(fig1)
+    #     fig1 = sns.set(style="white", palette="muted", color_codes=True)
+    #     f, axes = plt.subplots(1, 2, figsize=(15, 8), sharex=True)
+    #     sns.despine(left=True)
+    #     #Plot a histogram and kernel density estimate
+    #     sns.distplot(data_analyst['Salary_Estimate_From_(K)'], color="b", ax=axes[0])
+    #     sns.distplot(data_analyst['Salary_Estimate_To_(K)'], color="r",ax=axes[1])
+    #     plt.setp(axes, yticks=[])
+    #     plt.tight_layout()
+    #     st.set_option('deprecation.showPyplotGlobalUse', False)
+    #     st.pyplot(fig1)
 
 
     
