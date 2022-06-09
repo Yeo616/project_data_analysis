@@ -13,6 +13,3 @@ def run_search_description(name):
     st.dataframe(result)
     st.text('검색된 데이터는 {}개입니다.'.format(result.shape[0]))
 
-    with st.expander('Job Description 키워드 참고'):
-        img = Image.open('data/df_description.png')
-        st.image(img, use_column_width= True)
