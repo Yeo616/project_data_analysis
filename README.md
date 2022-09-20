@@ -23,8 +23,7 @@
 	- 미국의 익명 직장 및 상사 평가 사이트인 글래스도어이며, Data Analyst에 관련한 모집공고의 데이터입니다. 
 	- https://www.kaggle.com/datasets/ashishjangra27/ted-talks?select=data.csv
 
-- 결과물: www.ec2-3-34-129-145.ap-northeast-2.compute.amazonaws.com:8503/
-
+- 결과물: http://ec2-3-34-129-145.ap-northeast-2.compute.amazonaws.com:8501
  </br>
 
 참고사항: 영문로 된 데이터셋의 가공이므로, 도출 자료는 모두 영문입니다.
